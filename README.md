@@ -1,7 +1,7 @@
 # fluent.vim
 Fluent Syntax Highlighting for vim/neovim
 
-![](images/screenshoot.png)
+![Screenshot](https://github.com/projectfluent/fluent.vim/blob/master/images/screenshot.png?raw=true)
 
 ## Installation
 
