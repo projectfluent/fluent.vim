@@ -1,6 +1,8 @@
 # fluent.vim
 Fluent Syntax Highlighting for vim/neovim
 
+![](images/screenshoot.png)
+
 ## Installation
 
 
