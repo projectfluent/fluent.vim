@@ -1,19 +1,18 @@
 # fluent.vim
-Fluent Syntax Highlighting for vim/neovim
+
+Fluent syntax highlighting for VIM/NeoVIM.
 
 ![Screenshot](https://github.com/projectfluent/fluent.vim/blob/master/images/screenshot.png?raw=true)
 
-## Installation
 
+## Installation
 
 ### Using [Vundle][]
 
 1. Add `Plugin 'projectfluent/fluent.vim'` to `~/.vimrc`
 2. `:PluginInstall` or `$ vim +PluginInstall +qall`
 
-*Note:* Vundle will not automatically detect Rust files properly if `filetype
-on` is executed before Vundle. Please check the [quickstart][vqs] for more
-details.
+*Note:* Vundle will not automatically detect Rust files properly if `filetype on` is executed before Vundle. Please check the [quickstart][vqs] for more details.
 
 ### Using [Pathogen][]
 
@@ -39,8 +38,7 @@ Feel free to take over and improve - we'll gladly accept patches.
 
 ## Learn more
 
-Find out more about Project Fluent at [projectfluent.org][], including links to
-implementations, and information about how to get involved.
+Find out more about Project Fluent at [projectfluent.org][], including links to implementations, and information about how to get involved.
 
 [Fluent Syntax Guide]: http://projectfluent.org/fluent/guide
 [projectfluent.org]: http://projectfluent.org
