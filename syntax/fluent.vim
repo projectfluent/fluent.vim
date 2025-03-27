@@ -3,7 +3,7 @@ if exists("b:current_syntax")
 endif
 
 syntax region fluentComment start="\v^#" end="\v^(#)@!" contains=fluentTitleComment
-syntax region fluentTitleComment start=/\v(^#.*$\n)@<!^##/ms=e+1 end="$"
+syntax region fluentTitleComment start=/\v(^#.*$\n)@<!^(###|##)/ms=e+1 end="$"
 syntax match fluentIdentifier "^\v-?[a-zA-Z][a-zA-Z0-9_-]*" nextgroup=fluentDelimiter
 syntax match fluentDelimiter "\s*=\s*" contained skipnl nextgroup=fluentPattern
 syntax region fluentPattern contained start="" end="\v^(( )@!|( +[\.\[\*\}])@=)" contains=fluentPlaceable
