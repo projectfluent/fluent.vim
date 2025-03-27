@@ -12,7 +12,7 @@ syntax region fluentPlaceable contained start=+{+ end=+}+ contains=@fluentExpres
 
 syntax cluster fluentExpression contains=fluentFunction,fluentVariantKey,fluentVariable,fluentIdentifierExpression,fluentVariantSelectorOperator
 
-syntax match fluentVariantKey contained "\v\*?\[\s*[a-zA-Z0-9]+\s*\]" nextgroup=fluentPattern
+syntax match fluentVariantKey contained "\v\*?\[\s*[a-zA-Z0-9_-]+\s*\]" nextgroup=fluentPattern
 syntax match fluentVariable contained "\v\$[a-zA-Z][a-zA-Z0-9_-]*"
 syntax match fluentIdentifierExpression contained "\v\-?[a-zA-Z][a-zA-Z0-9_-]*"
 syntax match fluentFunction contained "\v[A-Z]+"
