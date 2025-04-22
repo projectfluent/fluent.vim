@@ -7,7 +7,7 @@ Fluent syntax highlighting for VIM/NeoVIM.
 
 ## Installation
 
-### Using [Vundle][]
+### Using [Vundle]
 
 1. Add `Plugin 'projectfluent/fluent.vim'` to `~/.vimrc`
 2. `:PluginInstall` or `$ vim +PluginInstall +qall`
@@ -30,6 +30,9 @@ git clone --depth=1 https://github.com/projectfluent/fluent.vim.git ~/.vim/bundl
 1. Add `Plug 'projectfluent/fluent.vim'` to `~/.vimrc`
 2. `:PlugInstall` or `$ vim +PlugInstall +qall`
 
+### Using [lazy.nvim]
+1. Add `{ "projectfluent/fluent.vim", ft = "fluent" }` to your list of plugins.
+
 
 ## Status
 
@@ -47,3 +50,4 @@ Find out more about Project Fluent at [projectfluent.org][], including links to 
 [Pathogen]: https://github.com/tpope/vim-pathogen
 [NeoBundle]: https://github.com/Shougo/neobundle.vim
 [vim-plug]: https://github.com/junegunn/vim-plug
+[lazy.nvim]: https://github.com/folke/lazy.nvim/
