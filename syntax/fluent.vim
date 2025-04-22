@@ -17,7 +17,7 @@ syntax match fluentVariantKey contained "\v\*?\[\s*[a-zA-Z0-9_-]+\s*\]" nextgrou
 syntax match fluentVariable contained "\v\$[a-zA-Z][a-zA-Z0-9_-]*"
 syntax match fluentIdentifierExpression contained "\v\-?[a-zA-Z][a-zA-Z0-9_-]*"
 syntax match fluentIdentifierTerm contained "\v\-[a-zA-Z][a-zA-Z0-9_-]+"
-syntax match fluentFunction contained "\v[A-Z]+"
+syntax match fluentFunction contained "\v[A-Z]+[A-Z0-9-_]+"
 syntax match fluentStringLiteral contained "\v\"[a-z]+\""
 syntax match fluentNumberLiteral contained "\v[0-9]+"
 syntax match fluentVariantSelectorOperator contained "\v\-\>"
