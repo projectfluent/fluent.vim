@@ -7,7 +7,7 @@ syntax region fluentGroupComment start=/\v(^##)@<!^## /ms=e+1 end="$"
 syntax region fluentResourceComment start=/\v(^###)@<!^### /ms=e+1 end="$"
 syntax match fluentIdentifier "^\v-?[a-zA-Z][a-zA-Z0-9_-]*" nextgroup=fluentDelimiter
 syntax match fluentDelimiter "\s*=\s*" contained skipnl nextgroup=fluentPattern
-syntax region fluentPattern contained start="" end="\v^(( )@!|( +[\.\[\*\}])@=)" contains=fluentPlaceable
+syntax region fluentPattern contained start="" end="\v^(( |$)@!|( +[\.\[\*\}])@=)" contains=fluentPlaceable
 syntax match fluentAttribute "\v\.[a-zA-Z][a-zA-Z0-9-]*" nextgroup=fluentDelimiter
 syntax region fluentPlaceable contained start=+{+ end=+}+ contains=@fluentExpression
 
