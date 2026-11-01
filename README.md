@@ -33,6 +33,18 @@ git clone --depth=1 https://github.com/projectfluent/fluent.vim.git ~/.vim/bundl
 ### Using [lazy.nvim]
 1. Add `{ "projectfluent/fluent.vim", ft = "fluent" }` to your list of plugins.
 
+### Using built-in packages
+
+#### Vim 8+ [packages][]
+```shell
+git clone --depth=1 https://github.com/projectfluent/fluent.vim.git ~/.vim/pack/fluent/start/fluent.vim
+```
+
+#### NeoVim [packages-neovim][]
+```shell
+git clone --depth=1 https://github.com/projectfluent/fluent.vim.git ~/.local/share/nvim/site/pack/fluent/start/fluent.vim
+```
+
 
 ## Status
 
@@ -51,3 +63,5 @@ Find out more about Project Fluent at [projectfluent.org][], including links to 
 [NeoBundle]: https://github.com/Shougo/neobundle.vim
 [vim-plug]: https://github.com/junegunn/vim-plug
 [lazy.nvim]: https://github.com/folke/lazy.nvim/
+[packages]: https://vimhelp.org/repeat.txt.html#packages
+[packages-neovim]: https://neovim.io/doc/user/pack/
